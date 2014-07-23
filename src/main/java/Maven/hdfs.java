@@ -18,7 +18,7 @@ import org.apache.hadoop.fs.Path;
  */
 public class hdfs {
 	
-	public static void Main(String[] args){
+	public static void main(String[] args){
 		try {
 			
 			if (args.length == 2){
@@ -45,7 +45,7 @@ public class hdfs {
 		byte[] fromFile =new byte[1000];
 		int bytesRead = 0;
 		while ( (bytesRead = inStream.read(fromFile) ) >0){
-			System.out.println(bytesRead);
+	
 		}
 		outStream.write(fromFile, 0, bytesRead );
 		inStream.close();
